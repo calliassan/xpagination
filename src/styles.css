@@ -1,0 +1,34 @@
+.heading {
+  background-color: green;
+  color: white;
+}
+
+.tablecomponent {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+table {
+  width: 100rem;
+  border-bottom: 2px solid green;
+}
+td {
+  border-bottom: 1px solid #ddd;
+}
+h1 {
+  text-align: center;
+}
+footer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  text-align: center;
+
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  margin: 8px;
+}
