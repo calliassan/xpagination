@@ -18,7 +18,7 @@ export function Employeedata() {
       console.log(data);
       setemployees(data);
     } catch (err) {
-      console.log(err);
+      alert("Failed to fetch data");
     }
   };
   const handlenext = () => {
@@ -68,17 +68,10 @@ export function Employeedata() {
         </table>
 
         <footer>
-          <button onClick={handleprevious} disabled={currentPage === 1}>
-            Previous
-          </button>
+          <button onClick={handleprevious}>Previous</button>
           <button>{currentPage}</button>
 
-          <button
-            onClick={handlenext}
-            disabled={currentPage === Math.ceil(employees.length / itemsinpage)}
-          >
-            Next
-          </button>
+          <button onClick={handlenext}>Next</button>
         </footer>
       </div>
     </div>
